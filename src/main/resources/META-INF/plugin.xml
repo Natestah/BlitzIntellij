@@ -9,10 +9,24 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.natestah.blitzintellij.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.natestah.blitzintellij.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
+    <actions>
+        <action
+                id="com.github.natestah.blitzintellij.commands.BlitzSearchThis"
+                class="com.github.natestah.blitzintellij.commands.BlitzSearchThis"
+                text="Blitz Search This Action"
+                description="BlitzSearchThis"
+                icon="BlitzIconPng.png">
+            <override-text place="MainMenu" text="Blitz Search this"/>
+            <keyboard-shortcut
+                    keymap="$default"
+                    first-keystroke="F8"
+                    />
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>

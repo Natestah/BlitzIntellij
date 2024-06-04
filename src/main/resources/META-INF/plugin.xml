@@ -10,7 +10,21 @@
 
     <extensions defaultExtensionNs="com.intellij">
     </extensions>
-
+    
+    <description><![CDATA[
+Provides <b>Search This</b> for the External Blitz Search.
+<br/>
+<p>This preserves your clipboard and provides an integrated 'feel' to an otherwise completely external Application.</p>
+<p>Blitz Search serves not only Jetbrains products but Any Editor, the plugin itself is a super-simple interface.</p>
+<br>
+The support includes:
+<ul>
+  <li><b>Search This</b> (Selection) - Places the selection in the Blitz Search Search Box</li>
+  <li><b>Search This</b> (Caret on a word) - Places word that the caret is on as a <b>Whole-Word</b> Search in the Blitz Search Search box.</li>
+</ul>
+For more information visit the
+<a href="https://natestah.com">Natestah.com</a>.
+]]></description>
     <applicationListeners>
     </applicationListeners>
 
@@ -19,7 +33,7 @@
                 id="com.github.natestah.blitzintellij.commands.BlitzSearchThis"
                 class="com.github.natestah.blitzintellij.commands.BlitzSearchThis"
                 text="Blitz Search This Action"
-                description="BlitzSearchThis"
+                description="Blitz Search This - Ask External Blitz Search Tool to find Selection or word under caret.."
                 icon="BlitzIconPng.png">
             <override-text place="MainMenu" text="Blitz Search this"/>
             <keyboard-shortcut

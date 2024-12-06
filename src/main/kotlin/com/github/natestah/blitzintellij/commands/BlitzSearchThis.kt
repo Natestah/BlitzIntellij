@@ -66,7 +66,7 @@ class BlitzSearchThis : AnAction() {
         }
         else 
         {
-            BrowserUtil.browse( "https://natestah.com")
+            BrowserUtil.browse( "https://natestah.com/download")
         }
             
         
